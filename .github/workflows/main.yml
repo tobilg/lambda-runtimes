@@ -31,7 +31,7 @@ jobs:
           npm i
 
           # Copy old data for changelog comparison
-          cp data/lambdaRuntimes.json data/lambdaRuntimes.old.json
+          #cp data/lambdaRuntimes.json data/lambdaRuntimes.old.json
 
           # Gather data
           npm run gather-html
@@ -47,7 +47,7 @@ jobs:
           # Check for changes and commit if there are any
           git diff-index --cached --quiet HEAD || echo '::set-output name=changed::true'
 
-      - name: Eventually publish new package version
+      - name: Eventually commit and push data if there is an update
         if: ${{ steps.gatherData.outputs.changed == 'true' }}
         run: |
           # Add new files \
