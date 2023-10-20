@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Parser for the AWS Lambda runtimes information. Parses the raw markdown to JSON",
   "scripts": {
-    "gather": "ts-node --transpile-only --log-error src/gather.ts"
+    "gather-markdown": "ts-node --transpile-only --log-error src/gatherFromMarkdown.ts",
+    "gather-html": "ts-node --transpile-only --log-error src/gatherFromHTML.ts"
   },
   "keywords": [
     "AWS",

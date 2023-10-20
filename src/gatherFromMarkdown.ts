@@ -1,4 +1,4 @@
-import { downloadAsHTML } from "./utils/downloader";
+import { downloadMarkdownAsHTML } from "./utils/downloader";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -13,7 +13,7 @@ interface RuntimeInfo {
 }
 
 const run = async () => {
-  const html = await downloadAsHTML("https://raw.githubusercontent.com/awsdocs/aws-lambda-developer-guide/main/doc_source/lambda-runtimes.md");
+  const html = await downloadMarkdownAsHTML("https://raw.githubusercontent.com/awsdocs/aws-lambda-developer-guide/main/doc_source/lambda-runtimes.md");
 
   const supportedRuntimes = html!.querySelectorAll("table:first-of-type > tbody > tr");
 
