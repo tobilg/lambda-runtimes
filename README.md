@@ -25,7 +25,7 @@ If you'd rather like to see if the `nodejs16.x` runtime has a deprecation date a
 curl -XGET https://d1jqgmmv0nngm7.cloudfront.net/will/nodejs16.x/be/deprecated
 ```
 
-If you query a runtime that is already deprecated, the `/is` endpoint will return `false`.
+If you query a runtime that is already deprecated, the `/will` endpoint will return `false`.
 
 If you want to check when a runtime will be deprecated, you can run 
 
