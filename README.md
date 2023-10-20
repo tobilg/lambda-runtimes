@@ -5,10 +5,11 @@ This project gathers information about AWS Lambda runtimes. This is the same inf
 You can find the current information about the runtimes at [data/lambdaRuntimes.json](https://raw.githubusercontent.com/tobilg/lambda-runtimes/main/data/lambdaRuntimes.json).
 
 ## API
-There's a simple API deployed to CloudFront. It has generally two different endpoints per runtime (equivalent to `$RUNTIME_NAME`):
+There's a simple API deployed to CloudFront. It has generally three different endpoints per runtime (equivalent to `$RUNTIME_NAME`):
 
 * `/is/$RUNTIME_NAME/deprecated`
 * `/will/$RUNTIME_NAME/be/deprecated`
+* `/when/will/$RUNTIME_NAME/be/deprecated`
 
 Those endpoints will either return `true` or `false` as `text/plain`. The base URL is `https://d1jqgmmv0nngm7.cloudfront.net`
 
@@ -25,3 +26,11 @@ curl -XGET https://d1jqgmmv0nngm7.cloudfront.net/will/nodejs16.x/be/deprecated
 ```
 
 If you query a runtime that is already deprecated, the `/is` endpoint will return `false`.
+
+If you want to check when a runtime will be deprecated, you can run 
+
+```bash
+curl -XGET https://d1jqgmmv0nngm7.cloudfront.net/when/will/nodejs16.x/be/deprecated
+```
+
+This will either return a date in `YYYY-MM-DD` format, or `unknown` if it's not yet known.
