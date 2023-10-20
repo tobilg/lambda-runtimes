@@ -1,0 +1,26 @@
+{
+  "name": "lambda-runtimes",
+  "version": "0.1.0",
+  "description": "Parser for the AWS Lambda runtimes information. Parses the raw markdown to JSON",
+  "scripts": {
+    "gather": "ts-node --transpile-only --log-error src/gather.ts"
+  },
+  "keywords": [
+    "AWS",
+    "Lambda",
+    "runtime",
+    "deprecation"
+  ],
+  "author": "TobiLG <tobilg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/markdown-it": "^13.0.4",
+    "@types/node": "^20.8.7",
+    "axios": "^1.5.1",
+    "markdown-it": "^13.0.2",
+    "node-html-parser": "^6.1.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

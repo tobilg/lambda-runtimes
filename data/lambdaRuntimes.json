@@ -1,0 +1,297 @@
+[
+  {
+    "name": "Node.js 16",
+    "identifier": "nodejs16.x",
+    "sdkVersion": "2.1083.0",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Node.js 14",
+    "identifier": "nodejs14.x",
+    "sdkVersion": "2.1055.0",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Node.js 12",
+    "identifier": "nodejs12.x",
+    "sdkVersion": "2.1055.0",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": "2023-03-30",
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Python 3.9",
+    "identifier": "python3.9",
+    "sdkVersion": "boto3-1.20.32 botocore-1.23.32",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Python 3.8",
+    "identifier": "python3.8",
+    "sdkVersion": "boto3-1.20.32 botocore-1.23.32",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Python 3.7",
+    "identifier": "python3.7",
+    "sdkVersion": "boto3-1.20.32 botocore-1.23.32",
+    "operatingSystem": "Amazon Linux",
+    "architectures": [
+      "x86_64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Java 11",
+    "identifier": "java11",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Java 8",
+    "identifier": "java8.al2",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Java 8",
+    "identifier": "java8",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux",
+    "architectures": [
+      "x86_64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": ".NET Core 3.1",
+    "identifier": "dotnetcore3.1",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": "2023-03-30",
+    "depracationPhase2Date": null
+  },
+  {
+    "name": ".NET 6",
+    "identifier": "dotnet6",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": ".NET 5",
+    "identifier": "dotnet5.0",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Go 1.x",
+    "identifier": "go1.x",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux",
+    "architectures": [
+      "x86_64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Ruby 2.7",
+    "identifier": "ruby2.7",
+    "sdkVersion": "3.1.0",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Custom Runtime",
+    "identifier": "provided.al2",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Custom Runtime",
+    "identifier": "provided",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux",
+    "architectures": [
+      "x86_64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
+    "name": "Python 3.6",
+    "identifier": "python3.6",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": "2022-07-17",
+    "depracationPhase2Date": "2022-08-28"
+  },
+  {
+    "name": "Python 2.7",
+    "identifier": "python2.7",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": "2021-07-14",
+    "depracationPhase2Date": "2022-05-29"
+  },
+  {
+    "name": ".NET Core 2.1",
+    "identifier": "dotnetcore2.1",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": "2022-01-04",
+    "depracationPhase2Date": "2022-04-12"
+  },
+  {
+    "name": "Ruby 2.5",
+    "identifier": "ruby2.5",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": "2021-07-29",
+    "depracationPhase2Date": "2022-03-30"
+  },
+  {
+    "name": "Node.js 10",
+    "identifier": "nodejs10.x",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux 2",
+    "architectures": [],
+    "depracationPhase1Date": "2021-07-29",
+    "depracationPhase2Date": "2022-02-13"
+  },
+  {
+    "name": "Node.js 8.10",
+    "identifier": "nodejs8.10",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": "2020-03-05"
+  },
+  {
+    "name": "Node.js 4.3",
+    "identifier": "nodejs4.3",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": "2020-03-04"
+  },
+  {
+    "name": "Node.js 6.10",
+    "identifier": "nodejs6.10",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": "2019-08-11"
+  },
+  {
+    "name": ".NET Core 1.0",
+    "identifier": "dotnetcore1.0",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": "2019-07-29"
+  },
+  {
+    "name": ".NET Core 2.0",
+    "identifier": "dotnetcore2.0",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": "2019-05-29"
+  },
+  {
+    "name": "Node.js 4.3 edge",
+    "identifier": "nodejs4.3-edge",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": "2019-04-29"
+  },
+  {
+    "name": "Node.js 0.10",
+    "identifier": "nodejs",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "architectures": [],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": "2016-10-30"
+  }
+]
