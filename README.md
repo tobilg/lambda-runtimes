@@ -11,7 +11,7 @@ There's a simple API deployed to CloudFront. It has generally three different en
 * `/will/$RUNTIME_NAME/be/deprecated`
 * `/when/will/$RUNTIME_NAME/be/deprecated`
 
-Those endpoints will either return `true` or `false` as `text/plain`. The base URL is `https://d1jqgmmv0nngm7.cloudfront.net`
+The first two endpoints will either return `true` or `false` as `text/plain`. The base URL is `https://d1jqgmmv0nngm7.cloudfront.net`
 
 So, if you'd like to see if the `nodejs14.x` runtime is already deprecated, you can issue the following request with `curl`:
 
