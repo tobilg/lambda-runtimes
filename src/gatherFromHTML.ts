@@ -2,7 +2,7 @@ import { downloadAsHTML } from "./utils/downloader";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-interface RuntimeInfo {
+export interface RuntimeInfo {
   name: string;
   identifier: string;
   sdkVersion: string | null;

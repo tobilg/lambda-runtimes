@@ -1,0 +1,24 @@
+Resources:
+  WebsiteBucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: '${self:service}-bucket'
+
+  WebsiteBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref WebsiteBucket
+      PolicyDocument:
+        Statement:
+          - Sid: ReadBucketContents
+            Effect: Allow
+            Principal:
+              AWS:
+                Fn::Join:
+                  - ' '
+                  - - 'arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity'
+                    - !Ref CloudFrontOriginAccessIdentity
+            Action:
+              - s3:GetObject
+            Resource:
+              - !Sub 'arn:aws:s3:::${WebsiteBucket}/*'

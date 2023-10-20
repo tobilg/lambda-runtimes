@@ -1,0 +1,58 @@
+# See https://blog.m-taylor.co.uk/2018/01/cloudformation-template-for-a-cloudfront-enabled-s3-website.html
+Resources:
+  CloudFrontOriginAccessIdentity:
+    Type: 'AWS::CloudFront::CloudFrontOriginAccessIdentity'
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: '${self:service}-oai'
+
+  ResponseHeadersPolicy:
+    Type: AWS::CloudFront::ResponseHeadersPolicy
+    Properties: 
+      ResponseHeadersPolicyConfig:
+        Name: 'lambda-runtimes-mapthe-cloud'
+        CustomHeadersConfig: 
+          Items:
+            - Header: 'Content-Type'
+              Value: 'text/plain'
+              Override: True
+            - Header: 'Cache-Control'
+              Value: 'max-age=604800'
+              Override: True
+
+  # Main CF distribution
+  CFDistribution:
+    Type: 'AWS::CloudFront::Distribution'
+    DependsOn:
+      - WebsiteBucket
+    Properties:
+      DistributionConfig:
+        Origins:
+          - DomainName: !GetAtt WebsiteBucket.DomainName
+            OriginPath: ''
+            Id: S3BucketOrigin
+            S3OriginConfig:
+              OriginAccessIdentity:
+                Fn::Join:
+                  - ''
+                  - - 'origin-access-identity/cloudfront/'
+                    - !Ref CloudFrontOriginAccessIdentity
+        Comment: 'CloudFront origin for lambda-runtimes.mapthe.cloud'
+        DefaultRootObject: 'index.html'
+        DefaultCacheBehavior:
+          Compress: True
+          DefaultTTL: 3600
+          AllowedMethods:
+            - GET
+            - HEAD
+            - OPTIONS
+          TargetOriginId: S3BucketOrigin
+          ForwardedValues:
+            QueryString: False
+            Cookies:
+              Forward: none
+          ViewerProtocolPolicy: redirect-to-https
+          ResponseHeadersPolicyId: !GetAtt 'ResponseHeadersPolicy.Id'
+        Enabled: True
+        HttpVersion: 'http3'
+        PriceClass: 'PriceClass_All'

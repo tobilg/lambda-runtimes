@@ -1,0 +1,29 @@
+service: lambda-runtimes-infrastructure
+
+frameworkVersion: '3'
+
+plugins:
+  - serverless-s3-sync
+
+custom:
+  s3Sync:
+    - bucketName: '${self:service}-bucket'
+      localDir: ../files
+
+provider:
+  name: aws
+  region: 'us-east-1'
+  stage: 'prd'
+
+resources:
+  # CloudFront
+  - ${file(resources/cf-distribution.yml)}
+  # S3 Buckets
+  - ${file(resources/s3-bucket.yml)}
+
+package:
+  exclude:
+    - docs/**
+    - resources/**
+    - LICENSE
+    - README.md
