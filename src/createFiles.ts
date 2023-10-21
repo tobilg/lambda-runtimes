@@ -5,10 +5,14 @@ import lambdaRuntimes from "../data/lambdaRuntimes.json";
 import { RuntimeInfo } from "../src/gatherFromHTML";
 
 const rootFolder = "files";
+const runtimesPath = `${rootFolder}/runtimes`;
 
 mkdirp.sync(rootFolder);
 
 const lrs = lambdaRuntimes as unknown as RuntimeInfo[];
+
+// Write runtimes route
+writeFileSync(runtimesPath, JSON.stringify(lrs, null, 2), { encoding: "utf-8" });
 
 lrs.forEach(lr => {
   mkdirp.sync(`${rootFolder}/is/${lr.identifier}`);
@@ -22,7 +26,8 @@ lrs.forEach(lr => {
   const isPath = `${rootFolder}/is/${lr.identifier}/deprecated`;
   const willPath = `${rootFolder}/will/${lr.identifier}/be/deprecated`;
   const whenPath = `${rootFolder}/when/will/${lr.identifier}/be/deprecated`;
-  
+
+  // Write "API" routes
   if (!depracationPhase1Date && !depracationPhase2Date) {
     writeFileSync(isPath, "false", { encoding: "utf-8" });
     writeFileSync(willPath, "false", { encoding: "utf-8" });
