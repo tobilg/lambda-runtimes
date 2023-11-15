@@ -1,8 +1,20 @@
 [
   {
+    "name": "Node.js 20",
+    "identifier": "nodejs20.x",
+    "sdkVersion": "3.362.0",
+    "operatingSystem": "Amazon Linux 2023",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
     "name": "Node.js 18",
     "identifier": "nodejs18.x",
-    "sdkVersion": "3.188.0",
+    "sdkVersion": "3.362.0",
     "operatingSystem": "Amazon Linux 2",
     "architectures": [
       "x86_64",
