@@ -107,6 +107,18 @@
     "depracationPhase2Date": null
   },
   {
+    "name": "Java 21",
+    "identifier": "java21",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2023",
+    "architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "depracationPhase1Date": null,
+    "depracationPhase2Date": null
+  },
+  {
     "name": "Java 17",
     "identifier": "java17",
     "sdkVersion": "",
