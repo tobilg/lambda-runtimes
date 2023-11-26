@@ -32,7 +32,7 @@
       "x86_64",
       "arm64"
     ],
-    "depracationPhase1Date": "2024-06-12",
+    "depracationPhase1Date": "2024-06-11",
     "depracationPhase2Date": null
   },
   {
@@ -44,7 +44,7 @@
       "x86_64",
       "arm64"
     ],
-    "depracationPhase1Date": "2023-11-27",
+    "depracationPhase1Date": "2023-11-26",
     "depracationPhase2Date": null
   },
   {
@@ -103,7 +103,7 @@
     "architectures": [
       "x86_64"
     ],
-    "depracationPhase1Date": "2023-11-27",
+    "depracationPhase1Date": "2023-11-26",
     "depracationPhase2Date": null
   },
   {
@@ -162,7 +162,7 @@
     "architectures": [
       "x86_64"
     ],
-    "depracationPhase1Date": "2023-12-31",
+    "depracationPhase1Date": "2023-12-30",
     "depracationPhase2Date": null
   },
   {
@@ -174,7 +174,7 @@
       "x86_64",
       "arm64"
     ],
-    "depracationPhase1Date": "2024-05-14",
+    "depracationPhase1Date": "2024-05-13",
     "depracationPhase2Date": null
   },
   {
@@ -197,7 +197,7 @@
     "architectures": [
       "x86_64"
     ],
-    "depracationPhase1Date": "2023-12-31",
+    "depracationPhase1Date": "2023-12-30",
     "depracationPhase2Date": null
   },
   {
@@ -221,7 +221,7 @@
       "x86_64",
       "arm64"
     ],
-    "depracationPhase1Date": "2023-12-07",
+    "depracationPhase1Date": "2023-12-06",
     "depracationPhase2Date": null
   },
   {
@@ -256,7 +256,7 @@
     "architectures": [
       "x86_64"
     ],
-    "depracationPhase1Date": "2023-12-31",
+    "depracationPhase1Date": "2023-12-30",
     "depracationPhase2Date": null
   },
   {
@@ -265,8 +265,8 @@
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
     "architectures": [],
-    "depracationPhase1Date": "2023-04-03",
-    "depracationPhase2Date": "2023-05-03"
+    "depracationPhase1Date": "2023-04-02",
+    "depracationPhase2Date": "2023-05-02"
   },
   {
     "name": "Node.js 12",
@@ -274,8 +274,8 @@
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
     "architectures": [],
-    "depracationPhase1Date": "2023-03-31",
-    "depracationPhase2Date": "2023-04-30"
+    "depracationPhase1Date": "2023-03-30",
+    "depracationPhase2Date": "2023-04-29"
   },
   {
     "name": "Python 3.6",
@@ -283,8 +283,8 @@
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
     "architectures": [],
-    "depracationPhase1Date": "2022-07-18",
-    "depracationPhase2Date": "2022-08-29"
+    "depracationPhase1Date": "2022-07-17",
+    "depracationPhase2Date": "2022-08-28"
   },
   {
     "name": "Python 2.7",
@@ -292,8 +292,8 @@
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
     "architectures": [],
-    "depracationPhase1Date": "2021-07-15",
-    "depracationPhase2Date": "2022-05-30"
+    "depracationPhase1Date": "2021-07-14",
+    "depracationPhase2Date": "2022-05-29"
   },
   {
     "name": ".NET 5 (container only)",
@@ -301,8 +301,8 @@
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
     "architectures": [],
-    "depracationPhase1Date": "2022-05-10",
-    "depracationPhase2Date": "2022-05-10"
+    "depracationPhase1Date": "2022-05-09",
+    "depracationPhase2Date": "2022-05-09"
   },
   {
     "name": ".NET Core 2.1",
@@ -310,8 +310,8 @@
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
     "architectures": [],
-    "depracationPhase1Date": "2022-01-05",
-    "depracationPhase2Date": "2022-04-13"
+    "depracationPhase1Date": "2022-01-04",
+    "depracationPhase2Date": "2022-04-12"
   },
   {
     "name": "Ruby 2.5",
@@ -319,8 +319,8 @@
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
     "architectures": [],
-    "depracationPhase1Date": "2021-07-30",
-    "depracationPhase2Date": "2022-03-31"
+    "depracationPhase1Date": "2021-07-29",
+    "depracationPhase2Date": "2022-03-30"
   },
   {
     "name": "Node.js 10",
@@ -328,8 +328,8 @@
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
     "architectures": [],
-    "depracationPhase1Date": "2021-07-30",
-    "depracationPhase2Date": "2022-02-14"
+    "depracationPhase1Date": "2021-07-29",
+    "depracationPhase2Date": "2022-02-13"
   },
   {
     "name": "Node.js 8.10",
@@ -338,7 +338,7 @@
     "operatingSystem": "Amazon Linux",
     "architectures": [],
     "depracationPhase1Date": null,
-    "depracationPhase2Date": "2020-03-06"
+    "depracationPhase2Date": "2020-03-05"
   },
   {
     "name": "Node.js 4.3",
@@ -347,7 +347,7 @@
     "operatingSystem": "Amazon Linux",
     "architectures": [],
     "depracationPhase1Date": null,
-    "depracationPhase2Date": "2020-03-05"
+    "depracationPhase2Date": "2020-03-04"
   },
   {
     "name": "Node.js 6.10",
@@ -356,7 +356,7 @@
     "operatingSystem": "Amazon Linux",
     "architectures": [],
     "depracationPhase1Date": null,
-    "depracationPhase2Date": "2019-08-12"
+    "depracationPhase2Date": "2019-08-11"
   },
   {
     "name": ".NET Core 1.0",
@@ -365,7 +365,7 @@
     "operatingSystem": "Amazon Linux",
     "architectures": [],
     "depracationPhase1Date": null,
-    "depracationPhase2Date": "2019-07-30"
+    "depracationPhase2Date": "2019-07-29"
   },
   {
     "name": ".NET Core 2.0",
@@ -374,7 +374,7 @@
     "operatingSystem": "Amazon Linux",
     "architectures": [],
     "depracationPhase1Date": null,
-    "depracationPhase2Date": "2019-05-30"
+    "depracationPhase2Date": "2019-05-29"
   },
   {
     "name": "Node.js 4.3 edge",
@@ -383,7 +383,7 @@
     "operatingSystem": "Amazon Linux",
     "architectures": [],
     "depracationPhase1Date": null,
-    "depracationPhase2Date": "2019-04-30"
+    "depracationPhase2Date": "2019-04-29"
   },
   {
     "name": "Node.js 0.10",
@@ -392,6 +392,6 @@
     "operatingSystem": "Amazon Linux",
     "architectures": [],
     "depracationPhase1Date": null,
-    "depracationPhase2Date": "2016-10-31"
+    "depracationPhase2Date": "2016-10-30"
   }
 ]

@@ -30,9 +30,6 @@ jobs:
           # Install dependencies
           npm i
 
-          # Copy old data for changelog comparison
-          #cp data/lambdaRuntimes.json data/lambdaRuntimes.old.json
-
           # Gather data
           npm run gather-html
 
@@ -56,3 +53,15 @@ jobs:
           git commit -am "[no ci] Data update on $(date '+%FT%H:%M:%S')" && \
           # Push to repo \
           git push
+      
+      - name: Generate files for the API
+        run: npm run create-files
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './files'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
