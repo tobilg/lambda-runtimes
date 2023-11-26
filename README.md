@@ -5,7 +5,7 @@ This project gathers information about AWS Lambda runtimes. This is the same inf
 You can find the current information about the runtimes at [data/lambdaRuntimes.json](https://raw.githubusercontent.com/tobilg/lambda-runtimes/main/data/lambdaRuntimes.json).
 
 ## API
-There's a simple API deployed to CloudFront. It has generally four different endpoints per runtime (equivalent to `$RUNTIME_NAME`):
+There's a simple API deployed to GitHub Pages. It has generally four different endpoints per runtime (equivalent to `$RUNTIME_NAME`):
 
 * `/is/$RUNTIME_NAME/deprecated`
 * `/will/$RUNTIME_NAME/be/deprecated`
