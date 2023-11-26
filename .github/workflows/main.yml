@@ -12,6 +12,10 @@ jobs:
   gather_and_update_data:
     name: Gather the latest AWS Lambda runtime data and if there is new data, push the update
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout
