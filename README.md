@@ -12,18 +12,18 @@ There's a simple API deployed to CloudFront. It has generally four different end
 * `/when/will/$RUNTIME_NAME/be/deprecated`
 * `/runtimes`
 
-The first two endpoints will either return `true` or `false` as `text/plain`. The base URL is `https://d1jqgmmv0nngm7.cloudfront.net`
+The first two endpoints will either return `true` or `false` as `text/plain`. The base URL is `https://tobilg.github.io/lambda-runtimes`
 
 So, if you'd like to see if the `nodejs14.x` runtime is already deprecated, you can issue the following request with `curl`:
 
 ```bash
-curl -XGET https://d1jqgmmv0nngm7.cloudfront.net/is/nodejs14.x/deprecated
+curl -XGET https://tobilg.github.io/lambda-runtimes/is/nodejs14.x/deprecated
 ```
 
 If you'd rather like to see if the `nodejs16.x` runtime has a deprecation date already set, you can issue the following request with `curl`:
 
 ```bash
-curl -XGET https://d1jqgmmv0nngm7.cloudfront.net/will/nodejs16.x/be/deprecated
+curl -XGET https://tobilg.github.io/lambda-runtimes/will/nodejs16.x/be/deprecated
 ```
 
 If you query a runtime that is already deprecated, the `/will` endpoint will return `false`.
@@ -31,7 +31,7 @@ If you query a runtime that is already deprecated, the `/will` endpoint will ret
 If you want to check when a runtime will be deprecated, you can run 
 
 ```bash
-curl -XGET https://d1jqgmmv0nngm7.cloudfront.net/when/will/nodejs16.x/be/deprecated
+curl -XGET https://tobilg.github.io/lambda-runtimes/when/will/nodejs16.x/be/deprecated
 ```
 
 This will either return a date in `YYYY-MM-DD` format, or `unknown` if it's not yet known.
@@ -39,7 +39,7 @@ This will either return a date in `YYYY-MM-DD` format, or `unknown` if it's not 
 If you want to have an overview of all the current information about the Lambda runtimes, you can issue
 
 ```bash
-curl -XGET https://d1jqgmmv0nngm7.cloudfront.net/runtimes
+curl -XGET https://tobilg.github.io/lambda-runtimes/runtimes
 ```
 
 This will return a JSON array with the info for each runtime.
