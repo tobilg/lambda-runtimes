@@ -7,9 +7,9 @@ export interface RuntimeInfo {
   identifier: string;
   sdkVersion: string | null;
   operatingSystem: string | null;
-  architectures: string[];
-  depracationPhase1Date: string | null;
-  depracationPhase2Date: string | null;
+  depracationDate: string | null;
+  blockFunctionCreateDate: string | null;
+  blockFunctionUpdateDate: string | null;
 }
 
 const run = async () => {
@@ -19,15 +19,15 @@ const run = async () => {
 
   const data: RuntimeInfo[] = Array.from(runtimes).map(tr => {
     const tds = Array.from(tr.getElementsByTagName("td"));
-    if (tds.length === 6) {
+    if (tds.length === 7) {
       return {
         name: tds[0].textContent?.trim() || "",
         identifier: tds[1].textContent?.trim() || "",
         sdkVersion: tds[2].textContent?.trim() || "",
         operatingSystem: tds[3].textContent?.trim() || "",
-        architectures: tds[4].textContent?.trim() ? tds[4].textContent?.trim().split(", ") : [],
-        depracationPhase1Date: tds[5].textContent?.trim() ? new Date(tds[5].textContent?.trim()).toISOString().substring(0, 10) : null,
-        depracationPhase2Date: null,
+        depracationDate: tds[4].textContent?.trim() ? new Date(tds[4].textContent!.trim()).toISOString().substring(0, 10) : null,
+        blockFunctionCreateDate: tds[5].textContent?.trim() ? new Date(tds[5].textContent!.trim()).toISOString().substring(0, 10) : null,
+        blockFunctionUpdateDate: tds[6].textContent?.trim() ? new Date(tds[6].textContent!.trim()).toISOString().substring(0, 10) : null,
       } as RuntimeInfo
     } else {
       return {
@@ -35,9 +35,9 @@ const run = async () => {
         identifier: tds[1].textContent?.trim() || "",
         sdkVersion: null,
         operatingSystem: tds[2].textContent?.trim() || "",
-        architectures: [],
-        depracationPhase1Date: tds[3].textContent?.trim() ? new Date(tds[3].textContent?.trim()).toISOString().substring(0, 10) : null,
-        depracationPhase2Date: tds[4].textContent?.trim() ? new Date(tds[4].textContent?.trim()).toISOString().substring(0, 10) : null,
+        depracationDate: tds[3].textContent?.trim() ? new Date(tds[3].textContent!.trim()).toISOString().substring(0, 10) : null,
+        blockFunctionCreateDate: tds[4].textContent?.trim() ? new Date(tds[4].textContent!.trim()).toISOString().substring(0, 10) : null,
+        blockFunctionUpdateDate: tds[5].textContent?.trim() ? new Date(tds[5].textContent!.trim()).toISOString().substring(0, 10) : null,
       } as RuntimeInfo
     }
   })
