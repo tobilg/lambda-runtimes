@@ -340,5 +340,23 @@
     "depracationDate": null,
     "blockFunctionCreateDate": null,
     "blockFunctionUpdateDate": "2016-10-31"
+  },
+  {
+    "name": "Node.js 6.10",
+    "identifier": "nodejs6.10",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2019-08-12",
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
+  },
+  {
+    "name": ".NET 5 (container only)",
+    "identifier": "dotnet5.0",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": null,
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
   }
 ]

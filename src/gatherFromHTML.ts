@@ -29,7 +29,7 @@ const run = async () => {
         blockFunctionCreateDate: tds[5].textContent?.trim() ? new Date(tds[5].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionUpdateDate: tds[6].textContent?.trim() ? new Date(tds[6].textContent!.trim()).toISOString().substring(0, 10) : null,
       } as RuntimeInfo
-    } else {
+    } else if (tds.length === 6) {
       return {
         name: tds[0].textContent?.trim() || "",
         identifier: tds[1].textContent?.trim() || "",
@@ -38,6 +38,16 @@ const run = async () => {
         depracationDate: tds[3].textContent?.trim() ? new Date(tds[3].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionCreateDate: tds[4].textContent?.trim() ? new Date(tds[4].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionUpdateDate: tds[5].textContent?.trim() ? new Date(tds[5].textContent!.trim()).toISOString().substring(0, 10) : null,
+      } as RuntimeInfo
+    } else {
+      return {
+        name: tds[0].textContent?.trim() || "",
+        identifier: tds[1].textContent?.trim() || "",
+        sdkVersion: null,
+        operatingSystem: tds[2].textContent?.trim() || "",
+        depracationDate: tds[3].textContent?.trim() ? new Date(tds[3].textContent!.trim()).toISOString().substring(0, 10) : null,
+        blockFunctionCreateDate: tds[4].textContent?.trim() ? new Date(tds[4].textContent!.trim()).toISOString().substring(0, 10) : null,
+        blockFunctionUpdateDate: null,
       } as RuntimeInfo
     }
   })
