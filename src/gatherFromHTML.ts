@@ -52,7 +52,7 @@ const run = async () => {
     }
   })
 
-  writeFileSync(join(__dirname, "../", "data", "lambdaRuntimes.json"), JSON.stringify(data, null, 2));
+  writeFileSync(join(__dirname, "../", "data", "lambdaRuntimes.json"), JSON.stringify(data.sort((a, b) => a.identifier > b.identifier ? 0 : -1), null, 2));
 }
 
 run();

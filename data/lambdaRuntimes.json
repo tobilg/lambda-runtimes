@@ -1,81 +1,81 @@
 [
   {
-    "name": "Node.js 20",
-    "identifier": "nodejs20.x",
-    "sdkVersion": "3.362.0",
-    "operatingSystem": "Amazon Linux 2023",
-    "depracationDate": null,
+    "name": ".NET 5 (container only)",
+    "identifier": "dotnet5.0",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": "2022-05-09",
     "blockFunctionCreateDate": null,
     "blockFunctionUpdateDate": null
   },
   {
-    "name": "Node.js 18",
-    "identifier": "nodejs18.x",
-    "sdkVersion": "3.362.0",
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": null,
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": null
-  },
-  {
-    "name": "Node.js 16",
-    "identifier": "nodejs16.x",
-    "sdkVersion": "2.1374.0",
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2024-06-12",
-    "blockFunctionCreateDate": "2024-07-15",
-    "blockFunctionUpdateDate": "2024-08-15"
-  },
-  {
-    "name": "Python 3.12",
-    "identifier": "python3.12",
-    "sdkVersion": "boto3-1.28.83 botocore-1.31.83",
-    "operatingSystem": "Amazon Linux 2023",
-    "depracationDate": null,
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": null
-  },
-  {
-    "name": "Python 3.11",
-    "identifier": "python3.11",
-    "sdkVersion": "boto3-1.28.83 botocore-1.31.83",
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": null,
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": null
-  },
-  {
-    "name": "Python 3.10",
-    "identifier": "python3.10",
-    "sdkVersion": "boto3-1.26.90 botocore-1.29.90",
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": null,
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": null
-  },
-  {
-    "name": "Python 3.9",
-    "identifier": "python3.9",
-    "sdkVersion": "boto3-1.26.90 botocore-1.29.90",
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": null,
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": null
-  },
-  {
-    "name": "Python 3.8",
-    "identifier": "python3.8",
-    "sdkVersion": "boto3-1.26.90 botocore-1.29.90",
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2024-10-14",
-    "blockFunctionCreateDate": "2024-11-13",
-    "blockFunctionUpdateDate": "2025-01-07"
-  },
-  {
-    "name": "Java 21",
-    "identifier": "java21",
+    "name": ".NET 6",
+    "identifier": "dotnet6",
     "sdkVersion": "",
-    "operatingSystem": "Amazon Linux 2023",
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": "2024-11-11",
+    "blockFunctionCreateDate": "2025-01-10",
+    "blockFunctionUpdateDate": "2025-02-10"
+  },
+  {
+    "name": ".NET 7 (container only)",
+    "identifier": "dotnet7",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": "2024-05-13",
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
+  },
+  {
+    "name": ".NET Core 1.0",
+    "identifier": "dotnetcore1.0",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2019-06-26",
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": "2019-07-29"
+  },
+  {
+    "name": ".NET Core 2.0",
+    "identifier": "dotnetcore2.0",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2019-05-29",
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": "2019-05-29"
+  },
+  {
+    "name": ".NET Core 2.1",
+    "identifier": "dotnetcore2.1",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2022-01-04",
+    "blockFunctionCreateDate": "2022-01-04",
+    "blockFunctionUpdateDate": "2022-04-12"
+  },
+  {
+    "name": ".NET Core 3.1",
+    "identifier": "dotnetcore3.1",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": "2023-04-02",
+    "blockFunctionCreateDate": "2023-04-02",
+    "blockFunctionUpdateDate": "2023-05-02"
+  },
+  {
+    "name": "Go 1.x",
+    "identifier": "go1.x",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2024-01-07",
+    "blockFunctionCreateDate": "2024-02-07",
+    "blockFunctionUpdateDate": "2024-03-11"
+  },
+  {
+    "name": "Java 11",
+    "identifier": "java11",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2",
     "depracationDate": null,
     "blockFunctionCreateDate": null,
     "blockFunctionUpdateDate": null
@@ -90,13 +90,22 @@
     "blockFunctionUpdateDate": null
   },
   {
-    "name": "Java 11",
-    "identifier": "java11",
+    "name": "Java 21",
+    "identifier": "java21",
     "sdkVersion": "",
-    "operatingSystem": "Amazon Linux 2",
+    "operatingSystem": "Amazon Linux 2023",
     "depracationDate": null,
     "blockFunctionCreateDate": null,
     "blockFunctionUpdateDate": null
+  },
+  {
+    "name": "Java 8",
+    "identifier": "java8",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2023-01-07",
+    "blockFunctionCreateDate": "2024-02-07",
+    "blockFunctionUpdateDate": "2024-03-11"
   },
   {
     "name": "Java 8",
@@ -108,45 +117,117 @@
     "blockFunctionUpdateDate": null
   },
   {
-    "name": "Java 8",
-    "identifier": "java8",
-    "sdkVersion": "",
+    "name": "Node.js 0.10",
+    "identifier": "nodejs",
+    "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
-    "depracationDate": "2023-01-08",
-    "blockFunctionCreateDate": "2024-02-08",
-    "blockFunctionUpdateDate": "2024-03-12"
+    "depracationDate": null,
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": "2016-10-30"
   },
   {
-    "name": ".NET 7 (container only)",
-    "identifier": "dotnet7",
-    "sdkVersion": "",
+    "name": "Node.js 10",
+    "identifier": "nodejs10.x",
+    "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2024-05-14",
+    "depracationDate": "2021-07-29",
+    "blockFunctionCreateDate": "2021-07-29",
+    "blockFunctionUpdateDate": "2022-02-13"
+  },
+  {
+    "name": "Node.js 12",
+    "identifier": "nodejs12.x",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": "2023-03-30",
+    "blockFunctionCreateDate": "2023-03-30",
+    "blockFunctionUpdateDate": "2023-04-29"
+  },
+  {
+    "name": "Node.js 14",
+    "identifier": "nodejs14.x",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": "2023-12-03",
+    "blockFunctionCreateDate": "2024-01-08",
+    "blockFunctionUpdateDate": "2024-02-07"
+  },
+  {
+    "name": "Node.js 16",
+    "identifier": "nodejs16.x",
+    "sdkVersion": "2.1374.0",
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": "2024-06-11",
+    "blockFunctionCreateDate": "2024-07-14",
+    "blockFunctionUpdateDate": "2024-08-14"
+  },
+  {
+    "name": "Node.js 18",
+    "identifier": "nodejs18.x",
+    "sdkVersion": "3.362.0",
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": null,
     "blockFunctionCreateDate": null,
     "blockFunctionUpdateDate": null
   },
   {
-    "name": ".NET 6",
-    "identifier": "dotnet6",
-    "sdkVersion": "",
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2024-11-12",
-    "blockFunctionCreateDate": "2024-01-11",
-    "blockFunctionUpdateDate": "2024-02-11"
+    "name": "Node.js 20",
+    "identifier": "nodejs20.x",
+    "sdkVersion": "3.362.0",
+    "operatingSystem": "Amazon Linux 2023",
+    "depracationDate": null,
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
   },
   {
-    "name": "Go 1.x",
-    "identifier": "go1.x",
+    "name": "Node.js 4.3",
+    "identifier": "nodejs4.3",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2020-03-04",
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": "2020-03-04"
+  },
+  {
+    "name": "Node.js 4.3 edge",
+    "identifier": "nodejs4.3-edge",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2020-03-04",
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": "2019-04-29"
+  },
+  {
+    "name": "Node.js 6.10",
+    "identifier": "nodejs6.10",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2019-08-11",
+    "blockFunctionCreateDate": "2019-08-11",
+    "blockFunctionUpdateDate": null
+  },
+  {
+    "name": "Node.js 8.10",
+    "identifier": "nodejs8.10",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2020-03-05",
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": "2020-03-05"
+  },
+  {
+    "name": "OS-only Runtime",
+    "identifier": "provided",
     "sdkVersion": "",
     "operatingSystem": "Amazon Linux",
-    "depracationDate": "2024-01-08",
-    "blockFunctionCreateDate": "2024-02-08",
-    "blockFunctionUpdateDate": "2024-03-12"
+    "depracationDate": "2024-01-07",
+    "blockFunctionCreateDate": "2024-02-07",
+    "blockFunctionUpdateDate": "2024-03-11"
   },
   {
-    "name": "Ruby 3.2",
-    "identifier": "ruby3.2",
-    "sdkVersion": "3.1.0",
+    "name": "OS-only Runtime",
+    "identifier": "provided.al2",
+    "sdkVersion": "",
     "operatingSystem": "Amazon Linux 2",
     "depracationDate": null,
     "blockFunctionCreateDate": null,
@@ -162,198 +243,99 @@
     "blockFunctionUpdateDate": null
   },
   {
-    "name": "OS-only Runtime",
-    "identifier": "provided.al2",
-    "sdkVersion": "",
+    "name": "Python 2.7",
+    "identifier": "python2.7",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux",
+    "depracationDate": "2021-07-14",
+    "blockFunctionCreateDate": "2021-07-14",
+    "blockFunctionUpdateDate": "2022-05-29"
+  },
+  {
+    "name": "Python 3.10",
+    "identifier": "python3.10",
+    "sdkVersion": "boto3-1.26.90 botocore-1.29.90",
     "operatingSystem": "Amazon Linux 2",
     "depracationDate": null,
     "blockFunctionCreateDate": null,
     "blockFunctionUpdateDate": null
   },
   {
-    "name": "OS-only Runtime",
-    "identifier": "provided",
-    "sdkVersion": "",
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2024-01-08",
-    "blockFunctionCreateDate": "2024-02-08",
-    "blockFunctionUpdateDate": "2024-03-12"
-  },
-  {
-    "name": "Node.js 14",
-    "identifier": "nodejs14.x",
-    "sdkVersion": null,
+    "name": "Python 3.11",
+    "identifier": "python3.11",
+    "sdkVersion": "boto3-1.28.83 botocore-1.31.83",
     "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2023-12-04",
-    "blockFunctionCreateDate": "2024-01-09",
-    "blockFunctionUpdateDate": "2024-02-08"
+    "depracationDate": null,
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
   },
   {
-    "name": "Python 3.7",
-    "identifier": "python3.7",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2023-12-04",
-    "blockFunctionCreateDate": "2024-01-09",
-    "blockFunctionUpdateDate": "2024-02-08"
-  },
-  {
-    "name": "Ruby 2.7",
-    "identifier": "ruby2.7",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2023-11-27",
-    "blockFunctionCreateDate": "2024-01-09",
-    "blockFunctionUpdateDate": "2024-02-08"
-  },
-  {
-    "name": ".NET Core 3.1",
-    "identifier": "dotnetcore3.1",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2023-04-03",
-    "blockFunctionCreateDate": "2023-04-03",
-    "blockFunctionUpdateDate": "2023-05-03"
-  },
-  {
-    "name": "Node.js 12",
-    "identifier": "nodejs12.x",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2023-03-31",
-    "blockFunctionCreateDate": "2023-03-31",
-    "blockFunctionUpdateDate": "2023-04-30"
+    "name": "Python 3.12",
+    "identifier": "python3.12",
+    "sdkVersion": "boto3-1.28.83 botocore-1.31.83",
+    "operatingSystem": "Amazon Linux 2023",
+    "depracationDate": null,
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
   },
   {
     "name": "Python 3.6",
     "identifier": "python3.6",
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
-    "depracationDate": "2022-07-18",
-    "blockFunctionCreateDate": "2022-07-18",
-    "blockFunctionUpdateDate": "2022-08-29"
+    "depracationDate": "2022-07-17",
+    "blockFunctionCreateDate": "2022-07-17",
+    "blockFunctionUpdateDate": "2022-08-28"
   },
   {
-    "name": ".NET 5 (container only)",
-    "identifier": "dotnet5.0",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2022-05-10",
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": null
-  },
-  {
-    "name": ".NET Core 2.1",
-    "identifier": "dotnetcore2.1",
+    "name": "Python 3.7",
+    "identifier": "python3.7",
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
-    "depracationDate": "2022-01-05",
-    "blockFunctionCreateDate": "2022-01-05",
-    "blockFunctionUpdateDate": "2022-04-13"
+    "depracationDate": "2023-12-03",
+    "blockFunctionCreateDate": "2024-01-08",
+    "blockFunctionUpdateDate": "2024-02-07"
   },
   {
-    "name": "Node.js 10",
-    "identifier": "nodejs10.x",
-    "sdkVersion": null,
+    "name": "Python 3.8",
+    "identifier": "python3.8",
+    "sdkVersion": "boto3-1.26.90 botocore-1.29.90",
     "operatingSystem": "Amazon Linux 2",
-    "depracationDate": "2021-07-30",
-    "blockFunctionCreateDate": "2021-07-30",
-    "blockFunctionUpdateDate": "2022-02-14"
+    "depracationDate": "2024-10-13",
+    "blockFunctionCreateDate": "2024-11-12",
+    "blockFunctionUpdateDate": "2025-01-06"
+  },
+  {
+    "name": "Python 3.9",
+    "identifier": "python3.9",
+    "sdkVersion": "boto3-1.26.90 botocore-1.29.90",
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": null,
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
   },
   {
     "name": "Ruby 2.5",
     "identifier": "ruby2.5",
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
-    "depracationDate": "2021-07-30",
-    "blockFunctionCreateDate": "2021-07-30",
-    "blockFunctionUpdateDate": "2022-03-31"
+    "depracationDate": "2021-07-29",
+    "blockFunctionCreateDate": "2021-07-29",
+    "blockFunctionUpdateDate": "2022-03-30"
   },
   {
-    "name": "Python 2.7",
-    "identifier": "python2.7",
+    "name": "Ruby 2.7",
+    "identifier": "ruby2.7",
     "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2021-07-15",
-    "blockFunctionCreateDate": "2021-07-15",
-    "blockFunctionUpdateDate": "2022-05-30"
+    "operatingSystem": "Amazon Linux 2",
+    "depracationDate": "2023-11-26",
+    "blockFunctionCreateDate": "2024-01-08",
+    "blockFunctionUpdateDate": "2024-02-07"
   },
   {
-    "name": "Node.js 8.10",
-    "identifier": "nodejs8.10",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2020-03-06",
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": "2020-03-06"
-  },
-  {
-    "name": "Node.js 4.3",
-    "identifier": "nodejs4.3",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2020-03-05",
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": "2020-03-05"
-  },
-  {
-    "name": "Node.js 4.3 edge",
-    "identifier": "nodejs4.3-edge",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2020-03-05",
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": "2019-04-30"
-  },
-  {
-    "name": "Node.js 6.10",
-    "identifier": "nodejs6.10",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2019-08-12",
-    "blockFunctionCreateDate": "2019-08-12",
-    "blockFunctionUpdateDate": null
-  },
-  {
-    "name": ".NET Core 1.0",
-    "identifier": "dotnetcore1.0",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2019-06-27",
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": "2019-07-30"
-  },
-  {
-    "name": ".NET Core 2.0",
-    "identifier": "dotnetcore2.0",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2019-05-30",
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": "2019-05-30"
-  },
-  {
-    "name": "Node.js 0.10",
-    "identifier": "nodejs",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": null,
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": "2016-10-31"
-  },
-  {
-    "name": "Node.js 6.10",
-    "identifier": "nodejs6.10",
-    "sdkVersion": null,
-    "operatingSystem": "Amazon Linux",
-    "depracationDate": "2019-08-12",
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": null
-  },
-  {
-    "name": ".NET 5 (container only)",
-    "identifier": "dotnet5.0",
-    "sdkVersion": null,
+    "name": "Ruby 3.2",
+    "identifier": "ruby3.2",
+    "sdkVersion": "3.1.0",
     "operatingSystem": "Amazon Linux 2",
     "depracationDate": null,
     "blockFunctionCreateDate": null,
