@@ -38,6 +38,6 @@ lrs.forEach(lr => {
 
   writeFileSync(isPath, createResult(!(deprecationDate && isBefore(currentDate, deprecationDate))), { encoding: "utf-8" });
   writeFileSync(willPath, createResult(!!deprecationDate), { encoding: "utf-8" });
-  writeFileSync(whenPath, createResult(deprecationDate ? format(deprecationDate, "yyyy-mm-dd") : null), { encoding: "utf-8" });
+  writeFileSync(whenPath, createResult(deprecationDate ? format(deprecationDate, "yyyy-MM-dd") : null), { encoding: "utf-8" });
 })
 
