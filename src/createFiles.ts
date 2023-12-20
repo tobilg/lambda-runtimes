@@ -1,6 +1,6 @@
 import { mkdirp } from "mkdirp";
 import { writeFileSync } from "node:fs";
-import { isBefore } from "date-fns";
+import { isBefore, format } from "date-fns";
 import lambdaRuntimes from "../data/lambdaRuntimes.json";
 import { RuntimeInfo } from "../src/gatherFromHTML";
 
@@ -38,6 +38,6 @@ lrs.forEach(lr => {
 
   writeFileSync(isPath, createResult(!(deprecationDate && isBefore(currentDate, deprecationDate))), { encoding: "utf-8" });
   writeFileSync(willPath, createResult(!!deprecationDate), { encoding: "utf-8" });
-  writeFileSync(whenPath, createResult(deprecationDate ? deprecationDate?.toISOString() : null), { encoding: "utf-8" });
+  writeFileSync(whenPath, createResult(deprecationDate ? format(deprecationDate, "YYYY-MM-DD") : null), { encoding: "utf-8" });
 })
 

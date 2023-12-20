@@ -34,7 +34,7 @@ If you want to check when a runtime will be deprecated, you can run
 curl -XGET https://tobilg.github.io/lambda-runtimes/when/will/nodejs16.x/be/deprecated.json
 ```
 
-This will either return a ISO date, e.g.  `{ "result": "2023-12-03T00:00:00.000Z" }`,  or `{ "result": null }` if it's not yet known.
+This will either return a date, e.g.  `{ "result": "2023-12-03" }`,  or `{ "result": null }` if it's not yet known.
 
 If you want to have an overview of all the current information about the Lambda runtimes, you can issue
 
