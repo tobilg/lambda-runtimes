@@ -27,7 +27,7 @@ lrs.forEach(lr => {
   mkdirp.sync(`${rootFolder}/will/${lr.identifier}/be`);
   mkdirp.sync(`${rootFolder}/when/will/${lr.identifier}/be`);
 
-  const depracationDate = lr.depracationDate ? new Date(lr.depracationDate) : null;
+  const deprecationDate = lr.deprecationDate ? new Date(lr.deprecationDate) : null;
   // const blockFunctionCreateDate = lr.blockFunctionCreateDate ? new Date(lr.blockFunctionCreateDate) : null;
   // const blockFunctionUpdateDate = lr.blockFunctionUpdateDate ? new Date(lr.blockFunctionUpdateDate) : null;
   const currentDate = new Date();
@@ -36,8 +36,8 @@ lrs.forEach(lr => {
   const willPath = `${rootFolder}/will/${lr.identifier}/be/deprecated.json`;
   const whenPath = `${rootFolder}/when/will/${lr.identifier}/be/deprecated.json`;
 
-  writeFileSync(isPath, createResult(!(depracationDate && isBefore(currentDate, depracationDate))), { encoding: "utf-8" });
-  writeFileSync(willPath, createResult(!!depracationDate), { encoding: "utf-8" });
-  writeFileSync(whenPath, createResult(depracationDate ? depracationDate?.toISOString() : null), { encoding: "utf-8" });
+  writeFileSync(isPath, createResult(!(deprecationDate && isBefore(currentDate, deprecationDate))), { encoding: "utf-8" });
+  writeFileSync(willPath, createResult(!!deprecationDate), { encoding: "utf-8" });
+  writeFileSync(whenPath, createResult(deprecationDate ? deprecationDate?.toISOString() : null), { encoding: "utf-8" });
 })
 

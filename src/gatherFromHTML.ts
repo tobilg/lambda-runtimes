@@ -7,7 +7,7 @@ export interface RuntimeInfo {
   identifier: string;
   sdkVersion: string | null;
   operatingSystem: string | null;
-  depracationDate: string | null;
+  deprecationDate: string | null;
   blockFunctionCreateDate: string | null;
   blockFunctionUpdateDate: string | null;
 }
@@ -25,7 +25,7 @@ const run = async () => {
         identifier: tds[1].textContent?.trim() || "",
         sdkVersion: tds[2].textContent?.trim() || "",
         operatingSystem: tds[3].textContent?.trim() || "",
-        depracationDate: tds[4].textContent?.trim() ? new Date(tds[4].textContent!.trim()).toISOString().substring(0, 10) : null,
+        deprecationDate: tds[4].textContent?.trim() ? new Date(tds[4].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionCreateDate: tds[5].textContent?.trim() ? new Date(tds[5].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionUpdateDate: tds[6].textContent?.trim() ? new Date(tds[6].textContent!.trim()).toISOString().substring(0, 10) : null,
       } as RuntimeInfo
@@ -35,7 +35,7 @@ const run = async () => {
         identifier: tds[1].textContent?.trim() || "",
         sdkVersion: null,
         operatingSystem: tds[2].textContent?.trim() || "",
-        depracationDate: tds[3].textContent?.trim() ? new Date(tds[3].textContent!.trim()).toISOString().substring(0, 10) : null,
+        deprecationDate: tds[3].textContent?.trim() ? new Date(tds[3].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionCreateDate: tds[4].textContent?.trim() ? new Date(tds[4].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionUpdateDate: tds[5].textContent?.trim() ? new Date(tds[5].textContent!.trim()).toISOString().substring(0, 10) : null,
       } as RuntimeInfo
@@ -45,7 +45,7 @@ const run = async () => {
         identifier: tds[1].textContent?.trim() || "",
         sdkVersion: null,
         operatingSystem: tds[2].textContent?.trim() || "",
-        depracationDate: tds[3].textContent?.trim() ? new Date(tds[3].textContent!.trim()).toISOString().substring(0, 10) : null,
+        deprecationDate: tds[3].textContent?.trim() ? new Date(tds[3].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionCreateDate: tds[4].textContent?.trim() ? new Date(tds[4].textContent!.trim()).toISOString().substring(0, 10) : null,
         blockFunctionUpdateDate: null,
       } as RuntimeInfo
