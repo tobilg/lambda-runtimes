@@ -12,34 +12,34 @@ There's a simple API deployed to GitHub Pages. It has generally four different e
 * `/when/will/$RUNTIME_NAME/be/deprecated`
 * `/runtimes`
 
-The first two endpoints will either return `true` or `false` as `text/plain`. The base URL is `https://tobilg.github.io/lambda-runtimes`
+The first two endpoints will either return `{ "result": true }` or `{ "result": false }` as `application/json`. The base URL is `https://tobilg.github.io/lambda-runtimes`
 
 So, if you'd like to see if the `nodejs14.x` runtime is already deprecated, you can issue the following request with `curl`:
 
 ```bash
-curl -XGET https://tobilg.github.io/lambda-runtimes/is/nodejs14.x/deprecated
+curl -XGET https://tobilg.github.io/lambda-runtimes/is/nodejs14.x/deprecated.json
 ```
 
 If you'd rather like to see if the `nodejs16.x` runtime has a deprecation date already set, you can issue the following request with `curl`:
 
 ```bash
-curl -XGET https://tobilg.github.io/lambda-runtimes/will/nodejs16.x/be/deprecated
+curl -XGET https://tobilg.github.io/lambda-runtimes/will/nodejs16.x/be/deprecated.json
 ```
 
-If you query a runtime that is already deprecated, the `/will` endpoint will return `false`.
+If you query a runtime that is already deprecated, the `/will` endpoint will return `{ "result": false }`.
 
 If you want to check when a runtime will be deprecated, you can run 
 
 ```bash
-curl -XGET https://tobilg.github.io/lambda-runtimes/when/will/nodejs16.x/be/deprecated
+curl -XGET https://tobilg.github.io/lambda-runtimes/when/will/nodejs16.x/be/deprecated.json
 ```
 
-This will either return a date in `YYYY-MM-DD` format, or `unknown` if it's not yet known.
+This will either return a ISO date, e.g.  `{ "result": "2023-12-03T00:00:00.000Z" }`,  or `{ "result": null }` if it's not yet known.
 
 If you want to have an overview of all the current information about the Lambda runtimes, you can issue
 
 ```bash
-curl -XGET https://tobilg.github.io/lambda-runtimes/runtimes
+curl -XGET https://tobilg.github.io/lambda-runtimes/runtimes.json
 ```
 
 This will return a JSON array with the info for each runtime.

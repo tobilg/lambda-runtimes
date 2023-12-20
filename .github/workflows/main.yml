@@ -13,7 +13,7 @@ jobs:
     name: Gather the latest AWS Lambda runtime data and if there is new data, push the update
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       pages: write
       id-token: write
 
