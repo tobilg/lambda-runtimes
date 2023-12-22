@@ -103,7 +103,7 @@
     "identifier": "java8",
     "sdkVersion": "",
     "operatingSystem": "Amazon Linux",
-    "deprecationDate": "2023-01-08",
+    "deprecationDate": "2024-01-08",
     "blockFunctionCreateDate": "2024-02-08",
     "blockFunctionUpdateDate": "2024-03-12"
   },
