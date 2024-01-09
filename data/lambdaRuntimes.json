@@ -65,7 +65,7 @@
   {
     "name": "Go 1.x",
     "identifier": "go1.x",
-    "sdkVersion": "",
+    "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
     "deprecationDate": "2024-01-08",
     "blockFunctionCreateDate": "2024-02-08",
@@ -101,7 +101,7 @@
   {
     "name": "Java 8",
     "identifier": "java8",
-    "sdkVersion": "",
+    "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
     "deprecationDate": "2024-01-08",
     "blockFunctionCreateDate": "2024-02-08",
@@ -218,7 +218,7 @@
   {
     "name": "OS-only Runtime",
     "identifier": "provided",
-    "sdkVersion": "",
+    "sdkVersion": null,
     "operatingSystem": "Amazon Linux",
     "deprecationDate": "2024-01-08",
     "blockFunctionCreateDate": "2024-02-08",
@@ -263,7 +263,7 @@
   {
     "name": "Python 3.11",
     "identifier": "python3.11",
-    "sdkVersion": "boto3-1.28.83 botocore-1.31.83",
+    "sdkVersion": "boto3-1.28.72 botocore-1.31.72",
     "operatingSystem": "Amazon Linux 2",
     "deprecationDate": null,
     "blockFunctionCreateDate": null,
@@ -272,7 +272,7 @@
   {
     "name": "Python 3.12",
     "identifier": "python3.12",
-    "sdkVersion": "boto3-1.28.83 botocore-1.31.83",
+    "sdkVersion": "boto3-1.28.72 botocore-1.31.72",
     "operatingSystem": "Amazon Linux 2023",
     "deprecationDate": null,
     "blockFunctionCreateDate": null,
@@ -328,7 +328,7 @@
     "identifier": "ruby2.7",
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
-    "deprecationDate": "2023-11-27",
+    "deprecationDate": "2023-12-07",
     "blockFunctionCreateDate": "2024-01-09",
     "blockFunctionUpdateDate": "2024-02-08"
   },
