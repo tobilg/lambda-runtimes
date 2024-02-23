@@ -27,6 +27,15 @@
     "blockFunctionUpdateDate": null
   },
   {
+    "name": ".NET 8",
+    "identifier": "dotnet8",
+    "sdkVersion": "",
+    "operatingSystem": "Amazon Linux 2023",
+    "deprecationDate": null,
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
+  },
+  {
     "name": ".NET Core 1.0",
     "identifier": "dotnetcore1.0",
     "sdkVersion": null,
