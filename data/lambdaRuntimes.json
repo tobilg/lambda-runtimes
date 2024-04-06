@@ -349,5 +349,14 @@
     "deprecationDate": null,
     "blockFunctionCreateDate": null,
     "blockFunctionUpdateDate": null
+  },
+  {
+    "name": "Ruby 3.3",
+    "identifier": "ruby3.3",
+    "sdkVersion": null,
+    "operatingSystem": "Amazon Linux 2023",
+    "deprecationDate": null,
+    "blockFunctionCreateDate": null,
+    "blockFunctionUpdateDate": null
   }
 ]
