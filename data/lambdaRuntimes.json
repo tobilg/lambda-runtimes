@@ -159,7 +159,7 @@
     "operatingSystem": "Amazon Linux 2",
     "deprecationDate": "2023-12-04",
     "blockFunctionCreateDate": "2024-01-09",
-    "blockFunctionUpdateDate": "2024-02-08"
+    "blockFunctionUpdateDate": "2025-02-28"
   },
   {
     "name": "Node.js 16",
