@@ -13,7 +13,7 @@
     "identifier": "dotnet6",
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
-    "deprecationDate": "2024-11-12",
+    "deprecationDate": "2024-12-20",
     "blockFunctionCreateDate": "2025-02-28",
     "blockFunctionUpdateDate": "2025-03-31"
   },
