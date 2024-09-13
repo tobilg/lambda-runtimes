@@ -175,9 +175,9 @@
     "identifier": "nodejs18.x",
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
-    "deprecationDate": null,
-    "blockFunctionCreateDate": null,
-    "blockFunctionUpdateDate": null
+    "deprecationDate": "2025-07-31",
+    "blockFunctionCreateDate": "2025-09-01",
+    "blockFunctionUpdateDate": "2025-10-01"
   },
   {
     "name": "Node.js 20",
