@@ -12,9 +12,13 @@ export interface RuntimeInfo {
   blockFunctionUpdateDate: string | null;
 }
 
-const formatDate = (dateString: string): string => {
-  const d = new Date(dateString);
-  return new Date(d.getTime() - (d.getTimezoneOffset()*60*1000)).toISOString().split('T')[0]
+const formatDate = (dateString: string): string | null => {
+  if (["Not scheduled", "N/A"].includes(dateString)) {
+    return null;
+  } else {
+    const d = new Date(dateString);
+    return new Date(d.getTime() - (d.getTimezoneOffset()*60*1000)).toISOString().split('T')[0]
+  }
 }
 
 const run = async () => {
@@ -22,6 +26,7 @@ const run = async () => {
 
   const runtimes =  html!.querySelectorAll("#main-col-body > div[class*='table-container'] > div > table:first-child > tr");
 
+  // @ts-ignore
   const data: RuntimeInfo[] = Array.from(runtimes).map(tr => {
     const tds = Array.from(tr.getElementsByTagName("td"));
     if (tds.length === 7) {
