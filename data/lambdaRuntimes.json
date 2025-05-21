@@ -346,9 +346,9 @@
     "identifier": "python3.9",
     "sdkVersion": null,
     "operatingSystem": "Amazon Linux 2",
-    "deprecationDate": "2025-11-03",
-    "blockFunctionCreateDate": "2025-12-08",
-    "blockFunctionUpdateDate": "2026-01-08"
+    "deprecationDate": "2025-12-15",
+    "blockFunctionCreateDate": "2026-01-15",
+    "blockFunctionUpdateDate": "2026-02-15"
   },
   {
     "name": "Ruby 2.5",
